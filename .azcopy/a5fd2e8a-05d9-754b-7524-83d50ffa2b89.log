@@ -1,0 +1,192 @@
+2020/12/17 08:48:40 AzcopyVersion  10.6.1
+2020/12/17 08:48:40 OS-Environment  linux
+2020/12/17 08:48:40 OS-Architecture  amd64
+2020/12/17 08:48:40 Log times are in UTC. Local time is 17 Dec 2020 08:48:40
+2020/12/17 08:48:40 Job-Command copy ./rawdata/json-data https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07 --recursive 
+2020/12/17 08:48:40 Number of CPUs: 2
+2020/12/17 08:48:40 Max file buffer RAM 1.000 GB
+2020/12/17 08:48:40 Max concurrent network operations: 32 (Based on number of CPUs. Set AZCOPY_CONCURRENCY_VALUE environment variable to override)
+2020/12/17 08:48:40 Check CPU usage when dynamically tuning concurrency: true (Based on hard-coded default. Set AZCOPY_TUNE_TO_CPU environment variable to true or false override)
+2020/12/17 08:48:40 Max concurrent transfer initiation routines: 64 (Based on hard-coded default. Set AZCOPY_CONCURRENT_FILES environment variable to override)
+2020/12/17 08:48:40 Max enumeration routines: 16 (Based on hard-coded default. Set AZCOPY_CONCURRENT_SCAN environment variable to override)
+2020/12/17 08:48:40 Parallelize getting file properties (file.Stat): false (Based on AZCOPY_PARALLEL_STAT_FILES environment variable)
+2020/12/17 08:48:40 Max open files when downloading: 1048152 (auto-computed)
+2020/12/17 08:48:40 ISO 8601 START TIME: to copy files that changed after this job started, use the parameter --include-after=2020-12-17T08:48:35Z
+2020/12/17 08:48:40 WARN: Failed to check if destination is a folder or a file (ADLSg2). Assuming the destination is a file: -> github.com/Azure/azure-storage-azcopy/azbfs.newStorageError, /home/vsts/work/1/s/azbfs/zc_storage_error.go:41
+===== RESPONSE ERROR (ServiceCode=PathNotFound) =====
+Description=404 The specified path does not exist., Details: (none)
+   HEAD https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.1 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [e4aa1917-8090-4ecc-5f6c-03d627fcf5ba]
+   X-Ms-Version: [2018-11-09]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 404 The specified path does not exist.
+   Date: [Thu, 17 Dec 2020 08:48:40 GMT]
+   Server: [Windows-Azure-HDFS/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Error-Code: [PathNotFound]
+   X-Ms-Request-Id: [9d165821-501f-0051-5451-d44c8f000000]
+   X-Ms-Version: [2018-11-09]
+
+
+
+2020/12/17 08:48:40 Any empty folders will be processed, because source and destination both support folders
+2020/12/17 08:48:40 Final job part has been created
+2020/12/17 08:48:40 PERF: primary performance constraint is Unknown. States: X:  0, O:  0, M:  0, L:  0, R:  0, D:  0, W:  0, F:  0, B:  0, E:  0, T:  0, GRs:  0
+2020/12/17 08:48:40 0.0 %, 0 Done, 0 Failed, 6 Pending, 0 Skipped, 6 Total, 
+2020/12/17 08:48:40 JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, credential type: Anonymous
+2020/12/17 08:48:40 scheduling JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, Transfer#=0, priority=0
+2020/12/17 08:48:40 scheduling JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, Transfer#=1, priority=0
+2020/12/17 08:48:40 scheduling JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, Transfer#=2, priority=0
+2020/12/17 08:48:40 scheduling JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, Transfer#=3, priority=0
+2020/12/17 08:48:40 scheduling JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, Transfer#=4, priority=0
+2020/12/17 08:48:40 scheduling JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, Transfer#=5, priority=0
+2020/12/17 08:48:40 Final job part has been scheduled
+2020/12/17 08:48:40 INFO: [P#0-T#0] has worker 5 which is processing TRANSFER
+2020/12/17 08:48:40 INFO: [P#0-T#0] Starting transfer: Source "/home/mathew_kim/Synapse-MCW/Hands-on%20lab/environment-setup/automation/rawdata/json-data/product-5.json" Destination "https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-5.json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07". Specified chunk size 8388608
+2020/12/17 08:48:40 INFO: [P#0-T#1] has worker 19 which is processing TRANSFER
+2020/12/17 08:48:40 INFO: [P#0-T#2] has worker 28 which is processing TRANSFER
+2020/12/17 08:48:40 INFO: [P#0-T#1] Starting transfer: Source "/home/mathew_kim/Synapse-MCW/Hands-on%20lab/environment-setup/automation/rawdata/json-data/product-1.json" Destination "https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-1.json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07". Specified chunk size 8388608
+2020/12/17 08:48:40 INFO: [P#0-T#2] Starting transfer: Source "/home/mathew_kim/Synapse-MCW/Hands-on%20lab/environment-setup/automation/rawdata/json-data/product-2.json" Destination "https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-2.json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07". Specified chunk size 8388608
+2020/12/17 08:48:40 INFO: [P#0-T#3] has worker 37 which is processing TRANSFER
+2020/12/17 08:48:40 INFO: [P#0-T#4] has worker 20 which is processing TRANSFER
+2020/12/17 08:48:40 INFO: [P#0-T#4] Starting transfer: Source "/home/mathew_kim/Synapse-MCW/Hands-on%20lab/environment-setup/automation/rawdata/json-data/product-4.json" Destination "https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-4.json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07". Specified chunk size 8388608
+2020/12/17 08:48:40 INFO: [P#0-T#5] has worker 53 which is processing TRANSFER
+2020/12/17 08:48:40 INFO: [P#0-T#5] Starting transfer: Source "/home/mathew_kim/Synapse-MCW/Hands-on%20lab/environment-setup/automation/rawdata/json-data/product-3.json" Destination "https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-3.json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07". Specified chunk size 8388608
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/138.935732ms, OpTime=157.883782ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data?resource=directory&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [a6fddd00-601f-004a-1051-d4728c000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/140.345896ms, OpTime=163.809448ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data?resource=directory&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [f43a4184-001f-0011-1051-d44bb7000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/144.325174ms, OpTime=169.290794ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data?resource=directory&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [d26cc1df-901f-002c-0951-d43dac000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/140.67461ms, OpTime=164.035458ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data?resource=directory&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [255b135a-501f-0033-5251-d48ea8000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/12.642567ms, OpTime=12.72237ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-3.json?resource=file&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [a6fddd03-601f-004a-1151-d4728c000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/156.247109ms, OpTime=179.713561ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data?resource=directory&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [9a4ec4e5-d01f-003d-7e51-d4a718000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/21.002342ms, OpTime=21.055045ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-2.json?resource=file&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [255b135b-501f-0033-5351-d48ea8000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/22.429506ms, OpTime=22.495609ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-5.json?resource=file&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [f43a4187-001f-0011-1351-d44bb7000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/28.620084ms, OpTime=28.678187ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-1.json?resource=file&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [d26cc1e4-901f-002c-0d51-d43dac000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/15.016173ms, OpTime=15.078776ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-4.json?resource=file&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [9a4ec4e9-d01f-003d-0251-d4a718000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/6.554494ms, OpTime=6.708801ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-2.json?action=append&position=0&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [f43a4189-001f-0011-1451-d44bb7000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/6.548694ms, OpTime=6.6889ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-5.json?action=append&position=0&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [a6fddd04-601f-004a-1251-d4728c000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/6.904409ms, OpTime=7.097218ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-3.json?action=append&position=0&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [255b135d-501f-0033-5451-d48ea8000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/182.604492ms, OpTime=199.07143ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data?resource=directory&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [c7b2e03b-f01f-0058-3651-d4095c000000]
+
+2020/12/17 08:48:40 INFO: [P#0-T#3] UPLOADSUCCESSFUL: (folder properties) https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data
+2020/12/17 08:48:40 JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, TransfersDone=1 of 6
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/14.592454ms, OpTime=14.696159ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-2.json?action=flush&close=true&position=89&retainuncommitteddata=false&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [a6fddd05-601f-004a-1351-d4728c000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/14.514551ms, OpTime=14.602455ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-3.json?action=flush&close=true&position=86&retainuncommitteddata=false&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [f43a418a-001f-0011-1551-d44bb7000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/15.792709ms, OpTime=15.872512ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-5.json?action=flush&close=true&position=86&retainuncommitteddata=false&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [255b135e-501f-0033-5551-d48ea8000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/2.431709ms, OpTime=2.480711ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   HEAD https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-3.json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [f43a418b-001f-0011-1651-d44bb7000000]
+
+2020/12/17 08:48:40 INFO: [P#0-T#5] UPLOADSUCCESSFUL: https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-3.json
+2020/12/17 08:48:40 JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, TransfersDone=2 of 6
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/2.756724ms, OpTime=2.809026ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   HEAD https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-2.json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [a6fddd07-601f-004a-1551-d4728c000000]
+
+2020/12/17 08:48:40 INFO: [P#0-T#2] UPLOADSUCCESSFUL: https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-2.json
+2020/12/17 08:48:40 JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, TransfersDone=3 of 6
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/2.565015ms, OpTime=2.669719ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   HEAD https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-5.json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [255b135f-501f-0033-5651-d48ea8000000]
+
+2020/12/17 08:48:40 INFO: [P#0-T#0] UPLOADSUCCESSFUL: https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-5.json
+2020/12/17 08:48:40 JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, TransfersDone=4 of 6
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/5.34964ms, OpTime=5.445844ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-4.json?action=append&position=0&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [f43a418c-001f-0011-1751-d44bb7000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/5.405342ms, OpTime=5.644253ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-1.json?action=append&position=0&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [a6fddd08-601f-004a-1651-d4728c000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/15.907614ms, OpTime=15.975817ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-1.json?action=flush&close=true&position=85&retainuncommitteddata=false&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [f43a418d-001f-0011-1851-d44bb7000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/18.360224ms, OpTime=18.413526ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-4.json?action=flush&close=true&position=87&retainuncommitteddata=false&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [a6fddd09-601f-004a-1751-d4728c000000]
+
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/2.860329ms, OpTime=2.908531ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   HEAD https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-1.json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [f43a418e-001f-0011-1951-d44bb7000000]
+
+2020/12/17 08:48:40 INFO: [P#0-T#1] UPLOADSUCCESSFUL: https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-1.json
+2020/12/17 08:48:40 JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, TransfersDone=5 of 6
+2020/12/17 08:48:40 ==> REQUEST/RESPONSE (Try=1/7.248525ms, OpTime=7.304728ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   HEAD https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-4.json?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [a6fddd0b-601f-004a-1951-d4728c000000]
+
+2020/12/17 08:48:40 INFO: [P#0-T#4] UPLOADSUCCESSFUL: https://asadatalakesynapsedemo01.dfs.core.windows.net/wwi-02/product-json/json-data/product-4.json
+2020/12/17 08:48:40 JobID=a5fd2e8a-05d9-754b-7524-83d50ffa2b89, Part#=0, TransfersDone=6 of 6
+2020/12/17 08:48:40 all parts of entire Job a5fd2e8a-05d9-754b-7524-83d50ffa2b89 successfully completed, cancelled or paused
+2020/12/17 08:48:42 PERF: primary performance constraint is Unknown. States: X:  0, O:  0, M:  0, L:  0, R:  0, D:  0, W:  0, F:  0, B:  0, E:  0, T:  0, GRs: 32
+2020/12/17 08:48:42 
+
+Diagnostic stats:
+IOPS: 9
+End-to-end ms per request: 48
+Network Errors: 0.00%
+Server Busy: 0.00%
+
+
+Job a5fd2e8a-05d9-754b-7524-83d50ffa2b89 summary
+Elapsed Time (Minutes): 0.0333
+Number of File Transfers: 5
+Number of Folder Property Transfers: 1
+Total Number of Transfers: 6
+Number of Transfers Completed: 6
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 0
+TotalBytesTransferred: 433
+Final Job Status: Completed
+

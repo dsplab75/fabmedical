@@ -1,0 +1,90 @@
+2020/12/17 08:11:43 AzcopyVersion  10.6.1
+2020/12/17 08:11:43 OS-Environment  linux
+2020/12/17 08:11:43 OS-Architecture  amd64
+2020/12/17 08:11:43 Log times are in UTC. Local time is 17 Dec 2020 08:11:43
+2020/12/17 08:11:43 Job-Command copy https://solliancepublicdata.blob.core.windows.net/wwi-02/data-generators/generator-product/generator-product.csv https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/data-generators/generator-product/generator-product.csv?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07 
+2020/12/17 08:11:43 Number of CPUs: 2
+2020/12/17 08:11:43 Max file buffer RAM 1.000 GB
+2020/12/17 08:11:43 Max concurrent network operations: 32 (Based on number of CPUs. Set AZCOPY_CONCURRENCY_VALUE environment variable to override)
+2020/12/17 08:11:43 Check CPU usage when dynamically tuning concurrency: true (Based on hard-coded default. Set AZCOPY_TUNE_TO_CPU environment variable to true or false override)
+2020/12/17 08:11:43 Max concurrent transfer initiation routines: 64 (Based on hard-coded default. Set AZCOPY_CONCURRENT_FILES environment variable to override)
+2020/12/17 08:11:43 Max enumeration routines: 16 (Based on hard-coded default. Set AZCOPY_CONCURRENT_SCAN environment variable to override)
+2020/12/17 08:11:43 Parallelize getting file properties (file.Stat): false (Based on AZCOPY_PARALLEL_STAT_FILES environment variable)
+2020/12/17 08:11:43 Max open files when downloading: 1048152 (auto-computed)
+2020/12/17 08:11:43 ISO 8601 START TIME: to copy files that changed after this job started, use the parameter --include-after=2020-12-17T08:11:36Z
+2020/12/17 08:11:43 WARN: failed to initialize destination container wwi-02; the transfer will continue (but be wary it may fail): -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, /home/vsts/go/pkg/mod/github.com/!azure/azure-storage-blob-go@v0.10.1-0.20200812020820-59b3010ad575/azblob/zc_storage_error.go:42
+===== RESPONSE ERROR (ServiceCode=AuthorizationFailure) =====
+Description=This request is not authorized to perform this operation.
+RequestId:f1d57ddd-201e-0064-394c-d4209b000000
+Time:2020-12-17T08:11:43.7199340Z, Details: 
+   Code: AuthorizationFailure
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02?restype=container&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [6f278bdf-1edb-48e9-4540-8545d927496c]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 403 This request is not authorized to perform this operation.
+   Content-Length: [246]
+   Content-Type: [application/xml]
+   Date: [Thu, 17 Dec 2020 08:11:42 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [6f278bdf-1edb-48e9-4540-8545d927496c]
+   X-Ms-Error-Code: [AuthorizationFailure]
+   X-Ms-Request-Id: [f1d57ddd-201e-0064-394c-d4209b000000]
+   X-Ms-Version: [2019-12-12]
+
+
+
+2020/12/17 08:11:43 Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+2020/12/17 08:11:43 Final job part has been created
+2020/12/17 08:11:43 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  0, E:  0, T:  0, GRs:  0
+2020/12/17 08:11:43 0.0 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:11:43 JobID=607e1e7e-3044-7540-4fa2-a92b6a96bc67, credential type: Anonymous
+2020/12/17 08:11:43 scheduling JobID=607e1e7e-3044-7540-4fa2-a92b6a96bc67, Part#=0, Transfer#=0, priority=0
+2020/12/17 08:11:43 Final job part has been scheduled
+2020/12/17 08:11:43 INFO: [P#0-T#0] has worker 2 which is processing TRANSFER
+2020/12/17 08:11:43 INFO: [P#0-T#0] Starting transfer: Source "https://solliancepublicdata.blob.core.windows.net/wwi-02/data-generators/generator-product/generator-product.csv" Destination "https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/data-generators/generator-product/generator-product.csv?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07". Specified chunk size 8388608
+2020/12/17 08:11:45 ==> REQUEST/RESPONSE (Try=1/1.357605765s, OpTime=1.380223082s) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/data-generators/generator-product/generator-product.csv?blockid=ymexywvlzmetzwnizc04odriltywogqtogi4y2fknda1ytbk&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [25f8d214-701e-0056-274c-d420ec000000]
+
+2020/12/17 08:11:45 ==> REQUEST/RESPONSE (Try=1/40.852176ms, OpTime=41.019982ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/data-generators/generator-product/generator-product.csv?comp=blocklist&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [25f8d5be-701e-0056-7a4c-d420ec000000]
+
+2020/12/17 08:11:45 ==> REQUEST/RESPONSE (Try=1/12.698759ms, OpTime=12.767962ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   GET https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/data-generators/generator-product/generator-product.csv?comp=properties&restype=account&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [25f8d5d0-701e-0056-094c-d420ec000000]
+
+2020/12/17 08:11:45 ==> REQUEST/RESPONSE (Try=1/51.321655ms, OpTime=51.380957ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/data-generators/generator-product/generator-product.csv?comp=tier&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [25f8d5d6-701e-0056-0f4c-d420ec000000]
+
+2020/12/17 08:11:45 ==> REQUEST/RESPONSE (Try=1/15.938976ms, OpTime=16.011479ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   HEAD https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/data-generators/generator-product/generator-product.csv?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [25f8d5ef-701e-0056-244c-d420ec000000]
+
+2020/12/17 08:11:45 INFO: [P#0-T#0] COPYSUCCESSFUL: https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/data-generators/generator-product/generator-product.csv
+2020/12/17 08:11:45 JobID=607e1e7e-3044-7540-4fa2-a92b6a96bc67, Part#=0, TransfersDone=1 of 1
+2020/12/17 08:11:45 all parts of entire Job 607e1e7e-3044-7540-4fa2-a92b6a96bc67 successfully completed, cancelled or paused
+2020/12/17 08:11:45 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  0, E:  0, T:  0, GRs: 32
+2020/12/17 08:11:45 
+
+Diagnostic stats:
+IOPS: 1
+End-to-end ms per request: 299
+Network Errors: 0.00%
+Server Busy: 0.00%
+
+
+Job 607e1e7e-3044-7540-4fa2-a92b6a96bc67 summary
+Elapsed Time (Minutes): 0.0333
+Number of File Transfers: 1
+Number of Folder Property Transfers: 0
+Total Number of Transfers: 1
+Number of Transfers Completed: 1
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 0
+TotalBytesTransferred: 93606
+Final Job Status: Completed
+

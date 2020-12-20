@@ -1,0 +1,377 @@
+2020/12/17 08:11:48 AzcopyVersion  10.6.1
+2020/12/17 08:11:48 OS-Environment  linux
+2020/12/17 08:11:48 OS-Architecture  amd64
+2020/12/17 08:11:48 Log times are in UTC. Local time is 17 Dec 2020 08:11:48
+2020/12/17 08:11:48 Job-Command copy https://solliancepublicdata.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07 
+2020/12/17 08:11:48 Number of CPUs: 2
+2020/12/17 08:11:48 Max file buffer RAM 1.000 GB
+2020/12/17 08:11:48 Max concurrent network operations: 32 (Based on number of CPUs. Set AZCOPY_CONCURRENCY_VALUE environment variable to override)
+2020/12/17 08:11:48 Check CPU usage when dynamically tuning concurrency: true (Based on hard-coded default. Set AZCOPY_TUNE_TO_CPU environment variable to true or false override)
+2020/12/17 08:11:48 Max concurrent transfer initiation routines: 64 (Based on hard-coded default. Set AZCOPY_CONCURRENT_FILES environment variable to override)
+2020/12/17 08:11:48 Max enumeration routines: 16 (Based on hard-coded default. Set AZCOPY_CONCURRENT_SCAN environment variable to override)
+2020/12/17 08:11:48 Parallelize getting file properties (file.Stat): false (Based on AZCOPY_PARALLEL_STAT_FILES environment variable)
+2020/12/17 08:11:48 Max open files when downloading: 1048152 (auto-computed)
+2020/12/17 08:11:48 ISO 8601 START TIME: to copy files that changed after this job started, use the parameter --include-after=2020-12-17T08:11:40Z
+2020/12/17 08:11:48 WARN: failed to initialize destination container wwi-02; the transfer will continue (but be wary it may fail): -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, /home/vsts/go/pkg/mod/github.com/!azure/azure-storage-blob-go@v0.10.1-0.20200812020820-59b3010ad575/azblob/zc_storage_error.go:42
+===== RESPONSE ERROR (ServiceCode=AuthorizationFailure) =====
+Description=This request is not authorized to perform this operation.
+RequestId:31e4004b-f01e-0048-514c-d4cc34000000
+Time:2020-12-17T08:11:47.8437709Z, Details: 
+   Code: AuthorizationFailure
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02?restype=container&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [d8078dec-15a1-45ee-7e33-d293bd501b55]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 403 This request is not authorized to perform this operation.
+   Content-Length: [246]
+   Content-Type: [application/xml]
+   Date: [Thu, 17 Dec 2020 08:11:47 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [d8078dec-15a1-45ee-7e33-d293bd501b55]
+   X-Ms-Error-Code: [AuthorizationFailure]
+   X-Ms-Request-Id: [31e4004b-f01e-0048-514c-d4cc34000000]
+   X-Ms-Version: [2019-12-12]
+
+
+
+2020/12/17 08:11:48 Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+2020/12/17 08:11:48 JobID=359284aa-0612-674c-565c-320973f8cfca, credential type: Anonymous
+2020/12/17 08:11:48 Final job part has been created
+2020/12/17 08:11:48 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  0, E:  0, T:  0, GRs:  0
+2020/12/17 08:11:48 0.0 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:11:48 scheduling JobID=359284aa-0612-674c-565c-320973f8cfca, Part#=0, Transfer#=0, priority=0
+2020/12/17 08:11:48 Final job part has been scheduled
+2020/12/17 08:11:48 INFO: [P#0-T#0] has worker 51 which is processing TRANSFER
+2020/12/17 08:11:48 INFO: [P#0-T#0] Starting transfer: Source "https://solliancepublicdata.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet" Destination "https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07". Specified chunk size 8388608
+2020/12/17 08:11:50 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  5, E:  0, T:  5, GRs: 32
+2020/12/17 08:11:50 0.0 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 142.0602
+2020/12/17 08:11:52 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  5, E:  0, T:  5, GRs: 32
+2020/12/17 08:11:52 0.0 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:11:52 ==> REQUEST/RESPONSE (Try=1/4.614677721s[SLOW >3s], OpTime=4.626958164s) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?blockid=otyxndbintutmjaznc0wmjq3ltq3njqtmjc4zdfjytgzmziw&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   Content-Length: [0]
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [d567a4c5-0450-440b-4471-274a8bd2ecd7]
+   X-Ms-Copy-Source: [https://solliancepublicdata.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet]
+   X-Ms-Source-Range: [bytes=8388608-16777215]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 201 Created
+   Content-Length: [0]
+   Date: [Thu, 17 Dec 2020 08:11:52 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [d567a4c5-0450-440b-4471-274a8bd2ecd7]
+   X-Ms-Content-Crc64: [ygPjm5DAjJA=]
+   X-Ms-Request-Id: [d3e533fa-f01e-0077-074c-d40497000000]
+   X-Ms-Request-Server-Encrypted: [true]
+   X-Ms-Version: [2019-12-12]
+
+2020/12/17 08:11:54 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  4, E:  0, T:  4, GRs: 32
+2020/12/17 08:11:54 23.6 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:11:56 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  4, E:  0, T:  4, GRs: 32
+2020/12/17 08:11:56 23.6 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:11:57 ==> REQUEST/RESPONSE (Try=1/9.41084756s[SLOW >3s], OpTime=9.424726061s) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?blockid=mjc3njmymjgtodyyys00zjqwltrizwmtzgzkndi4mmyzmwrk&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   Content-Length: [0]
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [b502966f-1d89-45c5-4b6c-93e7ab53b1d6]
+   X-Ms-Copy-Source: [https://solliancepublicdata.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet]
+   X-Ms-Source-Range: [bytes=0-8388607]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 201 Created
+   Content-Length: [0]
+   Date: [Thu, 17 Dec 2020 08:11:56 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [b502966f-1d89-45c5-4b6c-93e7ab53b1d6]
+   X-Ms-Content-Crc64: [7i34q+N4BbE=]
+   X-Ms-Request-Id: [26a19307-601e-005a-3a4c-d4b7e4000000]
+   X-Ms-Request-Server-Encrypted: [true]
+   X-Ms-Version: [2019-12-12]
+
+2020/12/17 08:11:58 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  3, E:  0, T:  3, GRs: 32
+2020/12/17 08:11:58 47.1 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:00 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  3, E:  0, T:  3, GRs: 32
+2020/12/17 08:12:00 47.1 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:01 ==> REQUEST/RESPONSE (Try=1/12.943369422s[SLOW >3s], OpTime=12.965526323s) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?blockid=nty2mduymtgtmmm5ys1lnjrlltu4ytatmdkxnjuwowzmztll&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   Content-Length: [0]
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [195ab246-96b5-4dfd-7e6b-1bf1973da4d0]
+   X-Ms-Copy-Source: [https://solliancepublicdata.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet]
+   X-Ms-Source-Range: [bytes=33554432-35583310]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 201 Created
+   Content-Length: [0]
+   Date: [Thu, 17 Dec 2020 08:12:00 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [195ab246-96b5-4dfd-7e6b-1bf1973da4d0]
+   X-Ms-Content-Crc64: [Z1Bb82PilnI=]
+   X-Ms-Request-Id: [a14e3dbb-001e-003e-354c-d4467c000000]
+   X-Ms-Request-Server-Encrypted: [true]
+   X-Ms-Version: [2019-12-12]
+
+2020/12/17 08:12:02 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:02 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:04 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:04 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:06 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:06 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:08 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:08 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:10 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:10 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:12 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:12 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:14 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:14 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:16 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:16 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:18 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:18 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:18 ==> REQUEST/RESPONSE (Try=1/30.067203291s[SLOW >3s], OpTime=30.078288092s) -- RESPONSE STATUS CODE ERROR
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?blockid=zgvinde4yjctntbhnc00mtq1ltdhmzqtotnkzji5mzfiyzrm&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   Content-Length: [0]
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [99cbbf0f-b136-47af-5363-c8290998610e]
+   X-Ms-Copy-Source: [https://solliancepublicdata.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet]
+   X-Ms-Source-Range: [bytes=16777216-25165823]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 500 Operation could not be completed within the specified time.
+   Content-Length: [245]
+   Content-Type: [application/xml]
+   Date: [Thu, 17 Dec 2020 08:12:18 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [99cbbf0f-b136-47af-5363-c8290998610e]
+   X-Ms-Error-Code: [OperationTimedOut]
+   X-Ms-Request-Id: [dc22e112-201e-0006-1c4c-d4e2bc000000]
+   X-Ms-Version: [2019-12-12]
+Response Details: ﻿<Code>OperationTimedOut</Code><Message>Operation could not be completed within the specified time. </Message>
+
+2020/12/17 08:12:18 ==> REQUEST/RESPONSE (Try=1/30.083714085s[SLOW >3s], OpTime=30.099869068s) -- RESPONSE STATUS CODE ERROR
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?blockid=zwmxyzqyogytztfkzi1hntrlltq5n2etntezzdeyytbjn2jh&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   Content-Length: [0]
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [4a4766ea-bd7a-42fa-52ea-a71d951735e6]
+   X-Ms-Copy-Source: [https://solliancepublicdata.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet]
+   X-Ms-Source-Range: [bytes=25165824-33554431]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 500 Operation could not be completed within the specified time.
+   Content-Length: [245]
+   Content-Type: [application/xml]
+   Date: [Thu, 17 Dec 2020 08:12:18 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [4a4766ea-bd7a-42fa-52ea-a71d951735e6]
+   X-Ms-Error-Code: [OperationTimedOut]
+   X-Ms-Request-Id: [a238b9c9-001e-004c-014c-d44133000000]
+   X-Ms-Version: [2019-12-12]
+Response Details: ﻿<Code>OperationTimedOut</Code><Message>Operation could not be completed within the specified time. </Message>
+
+2020/12/17 08:12:20 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:20 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:22 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:22 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:24 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:24 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:26 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:26 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:28 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:28 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:30 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:30 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:32 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:32 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:34 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:34 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:36 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:36 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:38 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:38 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:40 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:40 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:42 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  2, E:  0, T:  2, GRs: 32
+2020/12/17 08:12:42 52.9 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:43 ==> REQUEST/RESPONSE (Try=2/23.933107377s[SLOW >3s], OpTime=55.012084937s) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?blockid=zwmxyzqyogytztfkzi1hntrlltq5n2etntezzdeyytbjn2jh&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   Content-Length: [0]
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [4a4766ea-bd7a-42fa-52ea-a71d951735e6]
+   X-Ms-Copy-Source: [https://solliancepublicdata.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet]
+   X-Ms-Source-Range: [bytes=25165824-33554431]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 201 Created
+   Content-Length: [0]
+   Date: [Thu, 17 Dec 2020 08:12:43 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [4a4766ea-bd7a-42fa-52ea-a71d951735e6]
+   X-Ms-Content-Crc64: [7w5E45xSdjw=]
+   X-Ms-Request-Id: [a23949f9-001e-004c-224c-d44133000000]
+   X-Ms-Request-Server-Encrypted: [true]
+   X-Ms-Version: [2019-12-12]
+
+2020/12/17 08:12:44 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:12:44 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:46 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:12:46 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:48 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:12:48 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:49 ==> REQUEST/RESPONSE (Try=2/30.101820026s[SLOW >3s], OpTime=1m1.459483302s) -- RESPONSE STATUS CODE ERROR
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?blockid=zgvinde4yjctntbhnc00mtq1ltdhmzqtotnkzji5mzfiyzrm&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   Content-Length: [0]
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [99cbbf0f-b136-47af-5363-c8290998610e]
+   X-Ms-Copy-Source: [https://solliancepublicdata.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet]
+   X-Ms-Source-Range: [bytes=16777216-25165823]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 500 Operation could not be completed within the specified time.
+   Content-Length: [245]
+   Content-Type: [application/xml]
+   Date: [Thu, 17 Dec 2020 08:12:49 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [99cbbf0f-b136-47af-5363-c8290998610e]
+   X-Ms-Error-Code: [OperationTimedOut]
+   X-Ms-Request-Id: [dc23271d-201e-0006-484c-d4e2bc000000]
+   X-Ms-Version: [2019-12-12]
+Response Details: ﻿<Code>OperationTimedOut</Code><Message>Operation could not be completed within the specified time. </Message>
+
+2020/12/17 08:12:50 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:12:50 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:52 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:12:52 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:54 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:12:54 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:56 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:12:56 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:12:58 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:12:58 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:00 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:00 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:02 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:02 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:04 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:04 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:06 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:06 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:08 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:08 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:10 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:10 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:12 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:12 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:14 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:14 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:16 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:16 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:18 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:18 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:20 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:20 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:22 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:22 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:23 ==> REQUEST/RESPONSE (Try=3/30.124325449s[SLOW >3s], OpTime=1m35.290695026s) -- RESPONSE STATUS CODE ERROR
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?blockid=zgvinde4yjctntbhnc00mtq1ltdhmzqtotnkzji5mzfiyzrm&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   Content-Length: [0]
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [99cbbf0f-b136-47af-5363-c8290998610e]
+   X-Ms-Copy-Source: [https://solliancepublicdata.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet]
+   X-Ms-Source-Range: [bytes=16777216-25165823]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 500 Operation could not be completed within the specified time.
+   Content-Length: [245]
+   Content-Type: [application/xml]
+   Date: [Thu, 17 Dec 2020 08:13:23 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [99cbbf0f-b136-47af-5363-c8290998610e]
+   X-Ms-Error-Code: [OperationTimedOut]
+   X-Ms-Request-Id: [dc237c2b-201e-0006-6c4c-d4e2bc000000]
+   X-Ms-Version: [2019-12-12]
+Response Details: ﻿<Code>OperationTimedOut</Code><Message>Operation could not be completed within the specified time. </Message>
+
+2020/12/17 08:13:24 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:24 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:26 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:26 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:28 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:28 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:30 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:30 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:32 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:32 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:34 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:34 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:36 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:36 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:38 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:38 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:40 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:40 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:42 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:42 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:44 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  1, E:  0, T:  1, GRs: 32
+2020/12/17 08:13:44 76.4 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:13:44 ==> REQUEST/RESPONSE (Try=4/12.626227176s[SLOW >3s], OpTime=1m56.660497393s) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?blockid=zgvinde4yjctntbhnc00mtq1ltdhmzqtotnkzji5mzfiyzrm&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   Content-Length: [0]
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [99cbbf0f-b136-47af-5363-c8290998610e]
+   X-Ms-Copy-Source: [https://solliancepublicdata.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet]
+   X-Ms-Source-Range: [bytes=16777216-25165823]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 201 Created
+   Content-Length: [0]
+   Date: [Thu, 17 Dec 2020 08:13:44 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [99cbbf0f-b136-47af-5363-c8290998610e]
+   X-Ms-Content-Crc64: [158Fnh9R9nU=]
+   X-Ms-Request-Id: [dc23c988-201e-0006-494c-d4e2bc000000]
+   X-Ms-Request-Server-Encrypted: [true]
+   X-Ms-Version: [2019-12-12]
+
+2020/12/17 08:13:44 ==> REQUEST/RESPONSE (Try=1/48.057706ms, OpTime=48.214612ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?comp=blocklist&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [dc23e3a1-201e-0006-274c-d4e2bc000000]
+
+2020/12/17 08:13:44 ==> REQUEST/RESPONSE (Try=1/2.097774ms, OpTime=2.174077ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   GET https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?comp=properties&restype=account&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [dc23e3d5-201e-0006-434c-d4e2bc000000]
+
+2020/12/17 08:13:44 ==> REQUEST/RESPONSE (Try=1/41.934589ms, OpTime=41.995291ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?comp=tier&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [dc23e3d8-201e-0006-454c-d4e2bc000000]
+
+2020/12/17 08:13:44 ==> REQUEST/RESPONSE (Try=1/7.057051ms, OpTime=7.136254ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   HEAD https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [dc23e3f3-201e-0006-534c-d4e2bc000000]
+
+2020/12/17 08:13:44 INFO: [P#0-T#0] COPYSUCCESSFUL: https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/sale-small/Year=2010/Quarter=Q4/Month=12/Day=20101231/sale-small-20101231-snappy.parquet
+2020/12/17 08:13:44 JobID=359284aa-0612-674c-565c-320973f8cfca, Part#=0, TransfersDone=1 of 1
+2020/12/17 08:13:44 all parts of entire Job 359284aa-0612-674c-565c-320973f8cfca successfully completed, cancelled or paused
+2020/12/17 08:13:46 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  0, E:  0, T:  0, GRs: 32
+2020/12/17 08:13:46 
+
+Diagnostic stats:
+IOPS: 0
+End-to-end ms per request: 14159
+Network Errors: 0.00%
+Server Busy: 0.00%
+
+
+Job 359284aa-0612-674c-565c-320973f8cfca summary
+Elapsed Time (Minutes): 1.9672
+Number of File Transfers: 1
+Number of Folder Property Transfers: 0
+Total Number of Transfers: 1
+Number of Transfers Completed: 1
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 0
+TotalBytesTransferred: 35583311
+Final Job Status: Completed
+

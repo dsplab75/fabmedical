@@ -1,0 +1,90 @@
+2020/12/17 08:11:39 AzcopyVersion  10.6.1
+2020/12/17 08:11:39 OS-Environment  linux
+2020/12/17 08:11:39 OS-Architecture  amd64
+2020/12/17 08:11:39 Log times are in UTC. Local time is 17 Dec 2020 08:11:39
+2020/12/17 08:11:39 Job-Command copy https://solliancepublicdata.blob.core.windows.net/wwi-02/ml/onnx-hex/product_seasonality_classifier.onnx.hex https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/ml/onnx-hex/product_seasonality_classifier.onnx.hex?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07 
+2020/12/17 08:11:39 Number of CPUs: 2
+2020/12/17 08:11:39 Max file buffer RAM 1.000 GB
+2020/12/17 08:11:39 Max concurrent network operations: 32 (Based on number of CPUs. Set AZCOPY_CONCURRENCY_VALUE environment variable to override)
+2020/12/17 08:11:39 Check CPU usage when dynamically tuning concurrency: true (Based on hard-coded default. Set AZCOPY_TUNE_TO_CPU environment variable to true or false override)
+2020/12/17 08:11:39 Max concurrent transfer initiation routines: 64 (Based on hard-coded default. Set AZCOPY_CONCURRENT_FILES environment variable to override)
+2020/12/17 08:11:39 Max enumeration routines: 16 (Based on hard-coded default. Set AZCOPY_CONCURRENT_SCAN environment variable to override)
+2020/12/17 08:11:39 Parallelize getting file properties (file.Stat): false (Based on AZCOPY_PARALLEL_STAT_FILES environment variable)
+2020/12/17 08:11:39 Max open files when downloading: 1048152 (auto-computed)
+2020/12/17 08:11:39 ISO 8601 START TIME: to copy files that changed after this job started, use the parameter --include-after=2020-12-17T08:11:32Z
+2020/12/17 08:11:39 WARN: failed to initialize destination container wwi-02; the transfer will continue (but be wary it may fail): -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, /home/vsts/go/pkg/mod/github.com/!azure/azure-storage-blob-go@v0.10.1-0.20200812020820-59b3010ad575/azblob/zc_storage_error.go:42
+===== RESPONSE ERROR (ServiceCode=AuthorizationFailure) =====
+Description=This request is not authorized to perform this operation.
+RequestId:a162801a-701e-000b-054c-d42a68000000
+Time:2020-12-17T08:11:39.5728358Z, Details: 
+   Code: AuthorizationFailure
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02?restype=container&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [ef18a897-74d7-4b5c-471c-28e5f217d926]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 403 This request is not authorized to perform this operation.
+   Content-Length: [246]
+   Content-Type: [application/xml]
+   Date: [Thu, 17 Dec 2020 08:11:39 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [ef18a897-74d7-4b5c-471c-28e5f217d926]
+   X-Ms-Error-Code: [AuthorizationFailure]
+   X-Ms-Request-Id: [a162801a-701e-000b-054c-d42a68000000]
+   X-Ms-Version: [2019-12-12]
+
+
+
+2020/12/17 08:11:39 Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+2020/12/17 08:11:39 Final job part has been created
+2020/12/17 08:11:39 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  0, E:  0, T:  0, GRs:  0
+2020/12/17 08:11:39 0.0 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:11:39 JobID=e35ad638-7735-6f4a-4c4d-196fac377557, credential type: Anonymous
+2020/12/17 08:11:39 scheduling JobID=e35ad638-7735-6f4a-4c4d-196fac377557, Part#=0, Transfer#=0, priority=0
+2020/12/17 08:11:39 Final job part has been scheduled
+2020/12/17 08:11:39 INFO: [P#0-T#0] has worker 42 which is processing TRANSFER
+2020/12/17 08:11:39 INFO: [P#0-T#0] Starting transfer: Source "https://solliancepublicdata.blob.core.windows.net/wwi-02/ml/onnx-hex/product_seasonality_classifier.onnx.hex" Destination "https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/ml/onnx-hex/product_seasonality_classifier.onnx.hex?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07". Specified chunk size 8388608
+2020/12/17 08:11:41 ==> REQUEST/RESPONSE (Try=1/1.693451044s, OpTime=1.704036126s) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/ml/onnx-hex/product_seasonality_classifier.onnx.hex?blockid=zte2mzu0zjytywzhmy1jodqyltuzmdatzdk2nza2zwjlzjqy&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [d8fe6e1c-501e-0051-084c-d44c8f000000]
+
+2020/12/17 08:11:41 ==> REQUEST/RESPONSE (Try=1/33.624216ms, OpTime=33.783922ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/ml/onnx-hex/product_seasonality_classifier.onnx.hex?comp=blocklist&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [d8fe7316-501e-0051-2e4c-d44c8f000000]
+
+2020/12/17 08:11:41 ==> REQUEST/RESPONSE (Try=1/1.983772ms, OpTime=2.060375ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   GET https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/ml/onnx-hex/product_seasonality_classifier.onnx.hex?comp=properties&restype=account&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [d8fe7328-501e-0051-3f4c-d44c8f000000]
+
+2020/12/17 08:11:41 ==> REQUEST/RESPONSE (Try=1/53.743743ms, OpTime=53.797845ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/ml/onnx-hex/product_seasonality_classifier.onnx.hex?comp=tier&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [d8fe732c-501e-0051-434c-d44c8f000000]
+
+2020/12/17 08:11:41 ==> REQUEST/RESPONSE (Try=1/5.720207ms, OpTime=5.80811ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   HEAD https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/ml/onnx-hex/product_seasonality_classifier.onnx.hex?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [d8fe734a-501e-0051-604c-d44c8f000000]
+
+2020/12/17 08:11:41 INFO: [P#0-T#0] COPYSUCCESSFUL: https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/ml/onnx-hex/product_seasonality_classifier.onnx.hex
+2020/12/17 08:11:41 JobID=e35ad638-7735-6f4a-4c4d-196fac377557, Part#=0, TransfersDone=1 of 1
+2020/12/17 08:11:41 all parts of entire Job e35ad638-7735-6f4a-4c4d-196fac377557 successfully completed, cancelled or paused
+2020/12/17 08:11:41 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  0, E:  0, T:  0, GRs: 32
+2020/12/17 08:11:41 
+
+Diagnostic stats:
+IOPS: 1
+End-to-end ms per request: 359
+Network Errors: 0.00%
+Server Busy: 0.00%
+
+
+Job e35ad638-7735-6f4a-4c4d-196fac377557 summary
+Elapsed Time (Minutes): 0.0333
+Number of File Transfers: 1
+Number of Folder Property Transfers: 0
+Total Number of Transfers: 1
+Number of Transfers Completed: 1
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 0
+TotalBytesTransferred: 165962
+Final Job Status: Completed
+

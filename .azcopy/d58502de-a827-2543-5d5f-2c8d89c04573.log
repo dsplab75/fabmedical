@@ -1,0 +1,90 @@
+2020/12/17 08:11:31 AzcopyVersion  10.6.1
+2020/12/17 08:11:31 OS-Environment  linux
+2020/12/17 08:11:31 OS-Architecture  amd64
+2020/12/17 08:11:31 Log times are in UTC. Local time is 17 Dec 2020 08:11:31
+2020/12/17 08:11:31 Job-Command copy https://solliancepublicdata.blob.core.windows.net/wwi-02/campaign-analytics/campaignanalytics.csv https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/campaign-analytics/campaignanalytics.csv?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07 
+2020/12/17 08:11:31 Number of CPUs: 2
+2020/12/17 08:11:31 Max file buffer RAM 1.000 GB
+2020/12/17 08:11:31 Max concurrent network operations: 32 (Based on number of CPUs. Set AZCOPY_CONCURRENCY_VALUE environment variable to override)
+2020/12/17 08:11:31 Check CPU usage when dynamically tuning concurrency: true (Based on hard-coded default. Set AZCOPY_TUNE_TO_CPU environment variable to true or false override)
+2020/12/17 08:11:31 Max concurrent transfer initiation routines: 64 (Based on hard-coded default. Set AZCOPY_CONCURRENT_FILES environment variable to override)
+2020/12/17 08:11:31 Max enumeration routines: 16 (Based on hard-coded default. Set AZCOPY_CONCURRENT_SCAN environment variable to override)
+2020/12/17 08:11:31 Parallelize getting file properties (file.Stat): false (Based on AZCOPY_PARALLEL_STAT_FILES environment variable)
+2020/12/17 08:11:31 Max open files when downloading: 1048152 (auto-computed)
+2020/12/17 08:11:31 ISO 8601 START TIME: to copy files that changed after this job started, use the parameter --include-after=2020-12-17T08:11:24Z
+2020/12/17 08:11:31 WARN: failed to initialize destination container wwi-02; the transfer will continue (but be wary it may fail): -> github.com/Azure/azure-storage-blob-go/azblob.newStorageError, /home/vsts/go/pkg/mod/github.com/!azure/azure-storage-blob-go@v0.10.1-0.20200812020820-59b3010ad575/azblob/zc_storage_error.go:42
+===== RESPONSE ERROR (ServiceCode=AuthorizationFailure) =====
+Description=This request is not authorized to perform this operation.
+RequestId:a52df002-f01e-0005-434c-d403d8000000
+Time:2020-12-17T08:11:31.1802713Z, Details: 
+   Code: AuthorizationFailure
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02?restype=container&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   User-Agent: [AzCopy/10.6.1 Azure-Storage/0.10 (go1.13; linux)]
+   X-Ms-Client-Request-Id: [da44a9e9-49c1-4ee0-5d12-b6a08729f5ae]
+   X-Ms-Version: [2019-12-12]
+   --------------------------------------------------------------------------------
+   RESPONSE Status: 403 This request is not authorized to perform this operation.
+   Content-Length: [246]
+   Content-Type: [application/xml]
+   Date: [Thu, 17 Dec 2020 08:11:31 GMT]
+   Server: [Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0]
+   X-Ms-Client-Request-Id: [da44a9e9-49c1-4ee0-5d12-b6a08729f5ae]
+   X-Ms-Error-Code: [AuthorizationFailure]
+   X-Ms-Request-Id: [a52df002-f01e-0005-434c-d403d8000000]
+   X-Ms-Version: [2019-12-12]
+
+
+
+2020/12/17 08:11:31 Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+2020/12/17 08:11:31 Final job part has been created
+2020/12/17 08:11:31 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  0, E:  0, T:  0, GRs:  0
+2020/12/17 08:11:31 0.0 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+2020/12/17 08:11:31 JobID=d58502de-a827-2543-5d5f-2c8d89c04573, credential type: Anonymous
+2020/12/17 08:11:31 scheduling JobID=d58502de-a827-2543-5d5f-2c8d89c04573, Part#=0, Transfer#=0, priority=0
+2020/12/17 08:11:31 Final job part has been scheduled
+2020/12/17 08:11:31 INFO: [P#0-T#0] has worker 41 which is processing TRANSFER
+2020/12/17 08:11:31 INFO: [P#0-T#0] Starting transfer: Source "https://solliancepublicdata.blob.core.windows.net/wwi-02/campaign-analytics/campaignanalytics.csv" Destination "https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/campaign-analytics/campaignanalytics.csv?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07". Specified chunk size 8388608
+2020/12/17 08:11:32 ==> REQUEST/RESPONSE (Try=1/1.318640659s, OpTime=1.336529707s) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/campaign-analytics/campaignanalytics.csv?blockid=zmi2ntg2zjqtnzuzzs01ztrkltc5mzktyzyzytezyjm5yzji&comp=block&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [51ad7b6e-901e-0071-384c-d43728000000]
+
+2020/12/17 08:11:32 ==> REQUEST/RESPONSE (Try=1/24.131274ms, OpTime=24.29488ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/campaign-analytics/campaignanalytics.csv?comp=blocklist&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [51ad7ede-901e-0071-604c-d43728000000]
+
+2020/12/17 08:11:32 ==> REQUEST/RESPONSE (Try=1/18.111056ms, OpTime=18.173958ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   GET https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/campaign-analytics/campaignanalytics.csv?comp=properties&restype=account&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [51ad7eed-901e-0071-6d4c-d43728000000]
+
+2020/12/17 08:11:32 ==> REQUEST/RESPONSE (Try=1/47.584423ms, OpTime=47.655825ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   PUT https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/campaign-analytics/campaignanalytics.csv?comp=tier&se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [51ad7ef7-901e-0071-764c-d43728000000]
+
+2020/12/17 08:11:32 ==> REQUEST/RESPONSE (Try=1/7.826483ms, OpTime=7.902086ms) -- RESPONSE SUCCESSFULLY RECEIVED
+   HEAD https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/campaign-analytics/campaignanalytics.csv?se=2020-12-17t09%3A11%3A27z&sig=-REDACTED-&sp=rwdl&sr=c&sv=2019-07-07&timeout=901
+   X-Ms-Request-Id: [51ad7f06-901e-0071-044c-d43728000000]
+
+2020/12/17 08:11:32 INFO: [P#0-T#0] COPYSUCCESSFUL: https://asadatalakesynapsedemo01.blob.core.windows.net/wwi-02/campaign-analytics/campaignanalytics.csv
+2020/12/17 08:11:32 JobID=d58502de-a827-2543-5d5f-2c8d89c04573, Part#=0, TransfersDone=1 of 1
+2020/12/17 08:11:32 all parts of entire Job d58502de-a827-2543-5d5f-2c8d89c04573 successfully completed, cancelled or paused
+2020/12/17 08:11:33 PERF: primary performance constraint is Unknown. States: W:  0, F:  0, S:  0, E:  0, T:  0, GRs: 32
+2020/12/17 08:11:33 
+
+Diagnostic stats:
+IOPS: 2
+End-to-end ms per request: 286
+Network Errors: 0.00%
+Server Busy: 0.00%
+
+
+Job d58502de-a827-2543-5d5f-2c8d89c04573 summary
+Elapsed Time (Minutes): 0.0333
+Number of File Transfers: 1
+Number of Folder Property Transfers: 0
+Total Number of Transfers: 1
+Number of Transfers Completed: 1
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 0
+TotalBytesTransferred: 46273
+Final Job Status: Completed
+
